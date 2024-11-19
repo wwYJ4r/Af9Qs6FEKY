@@ -1,0 +1,12 @@
+.idea
+.gitignore
+.github
+.npmignore
+.travis.yml
+.eslintrc.json
+test
+coverage
+img
+.github
+docker-compose.yml
+.nyc_output
