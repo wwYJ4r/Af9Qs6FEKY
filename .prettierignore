@@ -1,0 +1,13 @@
+node_modules
+extension.zip
+.idea/
+.git/
+.DS_Store
+Thumbs.db
+extension/_metadata/
+package-lock.json
+extension/third_party/
+extension/manifest-backup.json
+tools/web/proxy.pac
+dist
+var
