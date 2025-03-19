@@ -1,0 +1,20 @@
+downstream_package_name: rear
+jobs:
+- job: copr_build
+  targets:
+  - fedora-all
+  - centos-stream-8-x86_64
+  - centos-stream-9-x86_64
+  trigger: pull_request
+- job: tests
+  trigger: pull_request
+  metadata:
+  targets:
+  - centos-stream-8-x86_64
+  - centos-stream-9-x86_64
+specfile_path: packaging/rpm/rear.spec
+files_to_sync:
+- .packit.yaml
+- dest: rear.spec
+  src: packaging/rpm/rear.spec
+upstream_package_name: rear
