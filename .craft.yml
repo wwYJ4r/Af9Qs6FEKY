@@ -1,0 +1,15 @@
+minVersion: '0.23.1'
+releaseBranchPrefix: releases
+changelog: CHANGES
+changelogPolicy: auto
+statusProvider:
+  name: github
+  config:
+    contexts:
+      - 'self-hosted-ubuntu-24.04-amd64'
+      - 'self-hosted-ubuntu-24.04-arm-arm64'
+      - 'assemble'
+artifactProvider:
+  name: none
+targets:
+  - name: github
