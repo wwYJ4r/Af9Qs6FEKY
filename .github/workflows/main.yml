@@ -13,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v5
     - name: Windows VS2019
       run: |
         call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build\vcvars64.bat" && msbuild.exe Cpp/Windows/ToyPathTracer.sln /p:Configuration=Release /p:CL_MPCount=2
@@ -25,7 +25,7 @@ jobs:
     strategy:
       fail-fast: false
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v5
     - name: macOS Xcode 13
       run: |
         echo "**** Building for macOS..."
